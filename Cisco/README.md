@@ -5,7 +5,7 @@ Commands for hardening Cisco devices
 - no cdp run
   - **Why**: "It is useful only in network monitoring and troubleshooting situations but is considered a security risk because of the amount of information provided from queries. In addition, there have been published denial-of-service (DoS) attacks that use CDP. CDP should be completely disabled unless necessary." From [Tenable](https://www.tenable.com/audits/items/CIS_Cisco_IOS_15_v4.1.1_Level_1.audit:86c2b9f7c174418fcbf6394f78fbb9bc)
 - no ip source-route
-  - **Why**: "Source routing is a feature of IP whereby individual packets can specify routes. This feature is used in several kinds of attacks." "Unless a network depends on source routing, it should be disabled." From [Tenable](https://www.tenable.com/audits/items/CIS_Cisco_IOS_15_v4.1.1_Level_1.audit:927dc23e4920340e6dbef59930843715) and [Cisco](https://community.cisco.com/t5/other-security-subjects/what-is-ip-source-route/m-p/2516037)
+  - **Why**: "Source routing is a feature of IP whereby individual packets can specify routes. This feature is used in several kinds of attacks." "Unless a network depends on source routing, it should be disabled." From [Tenable](https://www.tenable.com/audits/items/CIS_Cisco_IOS_15_v4.1.1_Level_1.audit:927dc23e4920340e6dbef59930843715) and [Cisco](https://community.cisco.com/t5/other-security-subjects/what-is-ip-source-route/m-p/2516037/highlight/true#M141179)
 - no service pad
   - **Why**: Packet Assembler/Disassembler (PAD) is generally not needed and is on by default. [Tenable](https://www.tenable.com/audits/items/CIS_Cisco_IOS_XE_17.x_v2.1.0_L1.audit:ed28812985a868a3a6faee241c3d1f6b)
 - service password-encryption
